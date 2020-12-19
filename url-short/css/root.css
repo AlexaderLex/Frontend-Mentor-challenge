@@ -1,0 +1,13 @@
+:root {
+    --prime-cyan: rgb(42, 207, 207);
+    --hover-prime: rgba(42, 207, 207, 0.8);
+    --prime-violet: hsl(257, 27%, 26%);
+    --second-red: rgb(244, 98, 98);
+    --neut-gray: hsl(0, 0%, 75%);
+    --gray-violet: hsl(257, 7%, 63%);
+    --dark-blue: hsl(255, 11%, 22%);
+    --dark-violet: hsl(260, 8%, 14%);
+    --fs: 18px;
+    --ff: "Poppins", sans-serif;
+    --mar-left: 10rem;
+}

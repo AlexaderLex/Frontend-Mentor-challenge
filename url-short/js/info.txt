@@ -1,0 +1,41 @@
+
+ *
+
+const input = document.querySelector("#input-url");
+const button = document.querySelector(".btn");
+
+const example = "GET/POST: https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html";
+
+let start = "https://api.shrtco.de/v2/shorten?url=";
+
+let url = "https://sashatop.ru/testimonials/";
+
+const res = fetch(start + url);
+
+const dataRes = res.then(res => res.json()).then(d => {
+    const data = d;
+    console.log(data);
+    let link_1 = data.result.full_short_link;
+    let link_2 = data.result.full_short_link2;
+    let link_3 = data.result.full_short_link3;
+    let short_1 = data.result.short_link;
+    let short_2 = data.result.short_link2;
+    let short_3 = data.result.short_link3;
+});
+
+button.addEventListener("click", () => {
+    console.log(input.value);
+});
+//* copy to clipboard 
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+//* more information for copy to clipboard: 
+//* https://www.w3docs.com/snippets/javascript/how-to-copy-the-text-to-the-clipboard-with-javascript.html
+
+*/
