@@ -141,6 +141,7 @@
  
  .imageDiv {
      width: 50%;
+     overflow-x: hidden;
  }
  
  .imageDiv img {
