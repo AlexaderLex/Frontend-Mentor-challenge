@@ -1,0 +1,136 @@
+ @media (max-width: 800px) {
+     header {
+         max-width: 90%;
+         padding: 1rem;
+     }
+     #header-text img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+     }
+     #score {
+         width: max-content;
+         padding: 0 1rem;
+     }
+     .content {
+         display: flex;
+         flex-direction: column;
+         /* align-items: center; */
+         justify-content: center;
+     }
+     .three {
+         margin-top: -3%;
+         justify-content: space-evenly;
+         align-items: center;
+     }
+     .image-div {
+         width: 80px;
+         height: 80px;
+         border-width: 12px;
+     }
+     .scissors {
+         border-color: #ec9e0e;
+     }
+     .paper {
+         border-color: #4865f4;
+     }
+     .rock {
+         border-color: #dc2e4e;
+     }
+     .lizard {
+         border-color: #834fe3;
+     }
+     .spock {
+         border-color: #40b9ce;
+     }
+     .content .image-div img {
+         display: block;
+         margin: 10px auto;
+         width: 100%;
+         height: 68%;
+         object-fit: contain;
+     }
+     #rules {
+         margin: 0 auto;
+         position: relative;
+         width: 40%;
+         top: 0;
+         left: 30%;
+         text-align: center;
+         margin-bottom: 40px;
+     }
+     #modal {
+         width: 100%;
+         height: 100%;
+         z-index: 4;
+     }
+     #modal-rules {
+         display: block;
+         text-align: center;
+     }
+     #game {
+         flex-direction: column;
+         justify-content: center;
+         padding: 0;
+     }
+     #game .image-div {
+         width: 120px;
+         height: 120px;
+         border-width: 16px;
+     }
+     #game .image-div img {
+         display: block;
+         margin: 0 auto;
+         width: 100%;
+         height: 68%;
+         object-fit: contain;
+     }
+     #message {
+         order: 3;
+         display: flex;
+         flex-direction: column;
+     }
+     #message h2 {
+         text-align: center;
+         margin: 20px 0;
+     }
+     #player,
+     #house {
+         position: relative;
+         width: 100%;
+         height: auto;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+     }
+     .game-head {
+         color: #fff;
+         margin: 20px 0;
+     }
+     #message #win,
+     #message #lose,
+     #play-again {
+         color: #fff;
+     }
+     #play-again {
+         margin-bottom: 20px;
+     }
+     #message #win,
+     #message #lose {
+         font-size: 36px;
+     }
+     #player .image-div img,
+     #house .image-div img {
+         max-width: 100%;
+         height: 100%;
+         object-fit: contain;
+     }
+     .good {
+         box-shadow: 0 0 2px 20px rgba(180, 180, 180, 0.1), 0 0 4px 40px rgba(71, 95, 126, 0.1), 0 0 8px 60px rgba(220, 220, 220, 0.1);
+         ;
+     }
+     .attrDiv {
+         display: none;
+     }
+ }

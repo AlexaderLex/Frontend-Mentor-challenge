@@ -1,0 +1,252 @@
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     --ff: "Barlow Semi Condensed", sans-serif;
+     --body-width: 1366px;
+     --clr-bg: to right, rgb(31, 55, 86), #141539;
+     --clr-dark-text: #3b4363;
+     --clr-score-text: #2a46c0;
+     --clr-header-outline: #606e85;
+     --grad-scissors: to bottom, #ec9e0e, #eca922;
+     --grad-paper: #4865f4 to #5671f5;
+     --grad-rock: #dc2e4e to #dd405d;
+     --grad-lizard: #834fe3 to #8c5de5;
+     --grad-spock: #40b9ce to #52bed1;
+ }
+ 
+ body {
+     font-family: var(--ff);
+     background-image: linear-gradient(var(--clr-bg));
+     width: 100%;
+     max-width: var(--body-width);
+     height: 100%;
+     max-height: 100vh;
+     position: relative;
+     margin: 0 auto;
+ }
+ 
+ header {
+     margin: 2rem auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: 4px solid var(--clr-header-outline);
+     border-radius: 15px;
+     padding: 1rem 1.7rem 0.8rem 1.95rem;
+     max-width: 52%;
+ }
+ 
+ #score {
+     margin-top: -5px;
+     background-color: #fff;
+     border-radius: 7px;
+     width: 7.8vw;
+     min-height: max-content;
+ }
+ 
+ #score-text {
+     display: block;
+     font-family: var(--ff);
+     font-size: 23px;
+     font-weight: 600;
+     color: var(--clr-score-text);
+     padding: 7px 0 0;
+     text-align: center;
+ }
+ 
+ #score-score {
+     color: var(--clr-dark-text);
+     font-size: 4.3rem;
+     font-weight: 700;
+     line-height: 1;
+     text-align: center;
+ }
+ /**/
+ /** *** Content *** */
+ 
+ main {
+     position: relative;
+ }
+ 
+ .content {
+     background-image: url("../img/bg-pentagon.svg");
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: center center;
+     margin: 0 auto;
+     width: 100%;
+     max-width: 70%;
+     height: 100%;
+     min-height: 53vh;
+ }
+ 
+ .content {
+     display: flex;
+     flex-direction: column;
+     /* align-items: center; */
+     justify-content: center;
+ }
+ 
+ .content-item {
+     margin: 0 auto;
+     display: flex;
+     width: 100%;
+     max-width: 80%;
+ }
+ 
+ .one {
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .two {
+     margin-top: -5%;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .three {
+     margin-top: 3%;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ 
+ .image-div {
+     background-color: #fff;
+     display: block;
+     margin: 10px;
+     border: 20px solid transparent;
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     cursor: pointer;
+ }
+ 
+ .image-div img {
+     display: block;
+     margin: 25px auto;
+     width: 100%;
+     height: 68%;
+     object-fit: contain;
+ }
+ /* *** */
+ /* *** pentagon icons */
+ 
+ .scissors {
+     border-color: #ec9e0e;
+     grid-column: 4/span 1;
+ }
+ 
+ .paper {
+     border-color: #4865f4;
+ }
+ 
+ .rock {
+     border-color: #dc2e4e;
+ }
+ 
+ .lizard {
+     border-color: #834fe3;
+ }
+ 
+ .spock {
+     border-color: #40b9ce;
+ }
+ 
+ .empty {
+     background-image: linear-gradient(var(--clr-bg));
+     border: none;
+ }
+ 
+ #rules {
+     display: inline-block;
+     color: #fff;
+     font-family: var(--ff);
+     font-size: 17px;
+     font-weight: 600;
+     letter-spacing: 4px;
+     padding: 9px 30px;
+     border: 2px solid var(--clr-header-outline);
+     border-radius: 7px;
+     position: absolute;
+     bottom: -40px;
+     left: 88.21%;
+     cursor: pointer;
+ }
+ 
+ #modal {
+     position: absolute;
+     background-color: #fff;
+     width: 500px;
+     height: 550px;
+     top: 0;
+     left: 50%;
+     transform: translate(-50%);
+     padding: 30px 40px;
+     border-radius: 14px;
+     display: none;
+ }
+ 
+ #modal-rules {
+     display: inline-block;
+     font-size: 28px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-left: 20px;
+ }
+ 
+ #modal img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+ 
+ #close {
+     display: block;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     top: 30px;
+     right: 20px;
+     cursor: pointer;
+ }
+ 
+ #close img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+ /* *** */
+ /* *** Attribution Div */
+ 
+ .attrDiv {
+     background-color: #ccc;
+     padding: 10px 20px;
+     text-align: center;
+     opacity: 0;
+     transition: opacity 300ms linear;
+     position: fixed;
+     left: calc(50% - 130px);
+     bottom: 0;
+ }
+ 
+ .attrDiv:hover {
+     opacity: 0.8;
+ }
+ 
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+ 
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+     display: inline-block;
+ }
