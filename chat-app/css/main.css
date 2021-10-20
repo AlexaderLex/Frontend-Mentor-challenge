@@ -1,0 +1,251 @@
+@import url("style.css");
+.head {
+    width: 50%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 300px;
+    position: absolute;
+    top: -15px;
+    left: 25%;
+}
+
+.user {
+    background-image: linear-gradient(to right, var(--clr-grad-two), var(--clr-grad-one));
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.arrow-left {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.image-div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url("../images/avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -50px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.info h4 {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.info span {
+    color: var(--prim-top-sub-head);
+    font-size: 13px;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.dot {
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+}
+
+.dot+.dot {
+    margin-top: 3px;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.message {
+    display: inline-block;
+    width: max-content;
+    max-width: 60%;
+    height: auto;
+    font-size: 10px;
+    padding: 4px 10px;
+}
+
+.message.red {
+    margin-right: auto;
+    color: var(--prim-chat-left);
+    background-color: #EFE4F5;
+    margin-top: 10px;
+    border-radius: 14px;
+    border-bottom-left-radius: 5px;
+}
+
+.message.white {
+    margin-left: auto;
+    color: var(--prim-chat-right);
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 14px;
+    border-bottom-right-radius: 5px;
+}
+
+.message.pics {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    margin-left: auto;
+}
+
+.message.pics img {
+    margin: 0 5px;
+    width: 42px;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.button.message.red {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 70%;
+    max-height: 26px;
+    background-image: linear-gradient(to left, var(--clr-grad-two), var(--clr-grad-one));
+}
+
+.button .radio {
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--second-radio-outline);
+    border-radius: 50%;
+}
+
+.button h3 {
+    color: #fff;
+}
+
+.button .text {
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: auto;
+    margin-left: 12px;
+}
+
+.send {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+}
+
+#input {
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 92%;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgba(100, 100, 100, 0.7);
+}
+
+.arrow-right {
+    background-color: #3B2450;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    right: 20px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+span.arrow {
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    transform: rotate(-45deg);
+    border-left: 2px solid #3B2450;
+    border-top: 2px solid #3B2450;
+    margin-left: -3px;
+}
+
+.message:not(:nth-child(1)) {
+    visibility: hidden;
+}
+
+.message:nth-child(2) {
+    animation: show 350ms linear 1000ms forwards;
+}
+
+.message:nth-child(3) {
+    animation: show 350ms linear 2500ms forwards;
+}
+
+.message:nth-child(4) {
+    animation: show 350ms linear 4000ms forwards;
+}
+
+.message:nth-child(5) {
+    animation: show 350ms linear 5500ms forwards;
+}
+
+.message:nth-child(6) {
+    animation: show 350ms linear 7000ms forwards;
+}
+
+.message:nth-child(7) {
+    animation: show 350ms linear 8500ms forwards;
+}
+
+.message:nth-child(8) {
+    animation: show 350ms linear 10000ms forwards;
+}
+
+.message:nth-child(9) {
+    animation: show 350ms linear 11500ms forwards;
+}
+
+@keyframes show {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}

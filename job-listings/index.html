@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Job Listings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/object.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <div class="filter">
+        <div class="selection">
+            <div class="select-item">
+
+                <select name="job" id="job" class="name" aria-label="role">
+            <option value="0">- role -</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Fullstack">Fullstack</option>
+        </select>
+                <span class="btn">&times;</span>
+            </div>
+            <div class="select-item">
+                <select name="level" id="level" class="name" aria-label="level">
+            <option value="0">- level -</option>
+            <option value="Junior">Junior</option>
+            <option value="Midweight">Midweight</option>
+            <option value="Senior">Senior</option>
+            </select>
+                <span class="btn">&times;</span>
+            </div>
+            <div class="select-item">
+                <select name="language" id="language" class="name" aria-label="languages">
+            <option value="0">- language -</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+        </select>
+                <span class="btn">&times;</span>
+            </div>
+            <div class="select-item">
+                <select name="tool" id="tool" class="name" aria-label="tools">
+            <option value="0">- tool -</option>
+            <option value="React">React</option>
+            <option value="Sass">Sass</option>
+            <option value="Vue">Vue</option>
+            <option value="RoR">RoR</option>
+        </select>
+                <span class="btn">&times;</span>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <span class="clear">Clear</span>
+        </div>
+    </div>
+    <!-- filter -->
+    <div class="content">
+
+    </div>
+
+    <footer>
+        <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/AlexaderLex/Frontend-Mentor-challenge" target="_blank">AlexanderLex</a>.
+        </div>
+    </footer>
+
+    <script src="js/data.json" type="application/json"></script>
+</body>
+
+</html>

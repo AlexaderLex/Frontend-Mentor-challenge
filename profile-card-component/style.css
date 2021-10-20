@@ -1,0 +1,151 @@
+ /*
+font-family: 'Kumbh Sans', sans-serif;
+ */
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     --prime-color: rgb(25, 162, 174);
+     --dark-color: rgb(45, 50, 72);
+     --grey-blue: rgb(106, 111, 129);
+     --dark-grey: rgb(150, 150, 150);
+ }
+ 
+ body {
+     font-family: "Kumbh Sans", sans-serif;
+     /* background: url("images/bg-pattern-top.svg") no-repeat -50% -400px fixed, url("images/bg-pattern-bottom.svg") no-repeat 150% 400px fixed; */
+     background-color: var(--prime-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     min-width: 100vw;
+     min-height: 100vh;
+     overflow: hidden;
+ }
+ 
+ .card {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+     min-width: 350px;
+     min-height: 350px;
+     border-radius: 15px;
+     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+     background-image: url("images/bg-pattern-card.svg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: 0 0;
+     background-color: #fff;
+     position: relative;
+ }
+ 
+ .card img {
+     border: 3px solid #fff;
+     border-radius: 50%;
+     margin-top: 25%;
+ }
+ 
+ span {
+     font-family: inherit;
+     color: var(--grey-blue);
+ }
+ 
+ .name,
+ .age {
+     display: inline-block;
+     font-size: 18px;
+     font-weight: 700;
+     margin-top: 10px;
+ }
+ 
+ .age {
+     margin-left: 10px;
+     color: var(--dark-grey);
+     font-weight: 400;
+ }
+ 
+ .city {
+     font-size: 14px;
+     color: var(--dark-grey);
+     display: block;
+     margin-top: 12px;
+     text-align: center;
+ }
+ 
+ .top,
+ .bottom {
+     position: absolute;
+     width: 900px;
+     height: 900px;
+     background-repeat: no-repeat;
+     background-size: contain;
+     z-index: -1;
+ }
+ 
+ .top {
+     background-image: url("images/bg-pattern-top.svg");
+     top: -400px;
+     left: -300px;
+ }
+ 
+ .bottom {
+     background-image: url("images/bg-pattern-bottom.svg");
+     bottom: -500px;
+     right: -250px;
+ }
+ 
+ .sub-part {
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     width: 100%;
+ }
+ 
+ .sub-part h2 {
+     font-size: 20px;
+     color: var(--grey-blue);
+     text-align: center;
+     margin-top: 10px;
+ }
+ 
+ .text {
+     margin: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .sub-text span {
+     display: block;
+     font-size: 12px;
+     max-width: max-content;
+     margin-top: 0;
+ }
+ 
+ @media (max-width:800px) {
+     .top {
+         width: 800px;
+         height: 800px;
+         top: -50%;
+         left: -70%;
+     }
+     .bottom {
+         width: 800px;
+         height: 800px;
+         bottom: -50%;
+         right: -50%;
+     }
+ }
+ 
+ .attribution {
+     position: absolute;
+     bottom: 30px;
+     right: calc(50% - 200px);
+ }

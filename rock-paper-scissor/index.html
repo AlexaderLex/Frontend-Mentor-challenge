@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="fonts/Barlow_Semi_Condensed/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/script.js " defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="header-text"><img src="img/logo-bonus.svg" alt=""></div>
+        <div id="score">
+            <span id="score-text">score</span>
+            <h1 id="score-score">0</h1>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content-item one">
+                <div class="image-div scissors" data-beat="paper, lizard">
+                    <img src="img/icon-scissors.svg" alt="scissors">
+                </div>
+            </div>
+            <!-- * content-item -->
+
+            <div class="content-item two">
+                <div class="image-div spock" data-beat="scissors, rock">
+                    <img src="img/icon-spock.svg" alt="Spock">
+                </div>
+                <div class="image-div paper" data-beat="rock, spock">
+                    <img src="img/icon-paper.svg" alt="paper">
+                </div>
+
+            </div>
+            <!-- * content-item -->
+            <div class="content-item three">
+                <div class="image-div lizard" data-beat="spock, paper">
+                    <img src="img/icon-lizard.svg" alt="lizard">
+
+                </div>
+                <div class="image-div rock" data-beat="lizard, scissors">
+                    <img src="img/icon-rock.svg" alt="rock">
+                </div>
+            </div>
+            <!-- * content-item -->
+        </div>
+        <!-- <div id="rules">RULES</div> -->
+        <div id="game" class="">
+            <div id="player">
+                <h4 class="game-head">YOU PICKED</h4>
+
+
+                <div class="image-div empty player">
+
+                </div>
+            </div>
+            <!-- *#player -->
+            <div id="message">
+                <h2 id="win">YOU WIN</h2>
+                <h2 id="lose">YOU LOSE</h2>
+                <h5 id="play-again">PLAY AGAIN</h5>
+            </div>
+            <div id="house">
+                <h4 class="game-head">THE HOUSE PICKED</h4>
+
+                <div class="image-div empty house">
+
+                </div>
+            </div>
+        </div>
+        <!-- * #game -->
+        <div id="modal">
+            <span id="modal-rules">RULES</span>
+            <img src="img/image-rules-bonus.svg" alt="">
+            <span id="close"><img src="img/icon-close.svg" alt="close icon"></span>
+        </div>
+        <div id="rules">RULES</div>
+    </main>
+
+
+    <!-- ****** Footer ****** -->
+
+    <div class="attrDiv">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/AlexaderLex/Frontend-Mentor-challenge" target="_blank">AlexanderLex</a>.
+        </div>
+    </div>
+</body>
+
+</html>

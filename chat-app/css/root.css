@@ -1,0 +1,15 @@
+:root {
+    --prim-top-main: rgb(62, 39, 83);
+    --prim-top-sub-head: rgb(216, 158, 255);
+    --prim-chat-left: rgb(146, 65, 200);
+    --prim-chat-right: rgb(110, 93, 126);
+    --text: rgba(110, 93, 126, 0.6);
+    --prim-placeholder: rgb(198, 202, 205);
+    --prim-par: rgb(163, 157, 170);
+    --clr-grad-one: rgb(233, 66, 255);
+    --clr-grad-two: rgb(136, 56, 255);
+    --white: #ffffff;
+    --second-app-bg: hsl(270, 20%, 96%);
+    --second-sub-button-bg: rgb(62, 39, 83);
+    --second-radio-outline: rgb(229, 112, 255);
+}
